@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Смартфоны",
+    "description": "Смартфоны - средство не только коммуникации, но и получение дополнительных функций для удобства жизни",
+    "products": [
+      {
+        "name": "Samsung Galaxy S24 Ultra",
+        "description": "256GB, Черный титан, 200MP камера",
+        "price": 146990.0,
+        "quantity": 15
+      },
+      {
+        "name": "Iphone 15",
+        "description": "512GB, Black, 48MP камера" ,
+        "price": 114990.0,
+        "quantity": 10
+      },
+      {
+        "name": "Xiaomi Mi 13 Ultra",
+        "description": "512GB, Зеленый, 200МР камера",
+        "price": 129999.0,
+        "quantity": 25
+      }
+    ]
+  },
+  {
+    "name": "Телевизоры",
+    "description": "Современный телевизор - который позволяет наслаждаться просмотром, станет вашим другом и помощником",
+    "products": [
+      {
+        "name": "55 QLED 4K",
+        "description": "Фоновая подсветка",
+        "price": 89000.0,
+        "quantity": 15
+      },
+      {
+        "name": "65 UHD 4K",
+        "description": "Голосовое управление",
+        "price": 145000.0,
+        "quantity": 18
+      }
+    ]
+  }
+]
