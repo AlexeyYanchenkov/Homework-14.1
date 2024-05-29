@@ -1,10 +1,15 @@
-class Product:
+from src.abstract_class import BaseProduct
+from src.print_mixin import PrintMixin
+
+
+class Product(PrintMixin, BaseProduct):
     name = str
     description = str
     price = float
     quantity = int
 
     def __init__(self, name: str, description: str, price: float, quantity: int):
+        super().__init__()
         self.name = name
         self.description = description
         self.__price = price
