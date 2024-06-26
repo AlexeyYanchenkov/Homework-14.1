@@ -9,6 +9,8 @@ class Product(PrintMixin, BaseProduct):
     quantity = int
 
     def __init__(self, name: str, description: str, price: float, quantity: int):
+        if quantity == 0:
+            raise ValueError("Нельзя добавить товар с нулевым количеством")
         super().__init__()
         self.name = name
         self.description = description
@@ -39,8 +41,6 @@ class Product(PrintMixin, BaseProduct):
         return f"{self.name}, {self.price} руб. Остаток: {self.quantity}"
 
     def __add__(self, other):
-        if self.quantity == 0 or other.quantity == 0:
-            raise ValueError('Нельзя складывать товары с нулевым количеством!')
         if type(other) == self.__class__:
             return self.__price * self.quantity + other.__price * other.quantity
 

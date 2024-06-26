@@ -51,3 +51,14 @@ lawn_grass = Grass("Perennial ryegrass", "Широкая", 1200, 10, "мануф
 
 print(smartphone)
 print(lawn_grass)
+try:
+    zero_quantity = Product("Телевизоры",
+                            "Современный телевизор, который позволяет наслаждаться просмотром, станет вашим другом и помощником",
+                            60000.0, 0)
+except ValueError as e:
+    print(e)
+
+    category_1 = Category("Смартфоны",
+                          "Описание_1",
+
+                          [])

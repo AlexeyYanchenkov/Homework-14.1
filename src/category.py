@@ -23,13 +23,15 @@ class Category:
         else:
             raise TypeError("Нельзя к продукту добавлять незнакомые объекты!")
 
-        def add_good(self, value):
-            if value.available == 0:
-                raise ValueError('Количество добавляемого товара не может быть нулевым!')
-            if isinstance(value, Product):
-                self.__good.append(value)
-            else:
-                raise TypeError("Нельзя к продукту добавлять левые объекты!")
+    def calculate_price(self):
+        sum_goods = 0
+        try:
+            for total_price in self.__products:
+                sum_goods += total_price.price
+            result = sum_goods / len(self.__products)
+            return result
+        except ZeroDivisionError:
+            return 0
 
     @property
     def products(self):
